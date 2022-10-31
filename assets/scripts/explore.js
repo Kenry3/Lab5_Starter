@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', init);
 function init() {
   // TODO
   // Page Elements
-  var im = document.getElementById("image");
+  var im = document.querySelector('img');
   var input = document.getElementById("text-to-speak");
   var voiceSelect = document.getElementById("voice-select");
   var button = document.querySelector('button');
