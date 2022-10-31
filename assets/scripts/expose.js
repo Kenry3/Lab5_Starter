@@ -5,8 +5,8 @@ window.addEventListener('DOMContentLoaded', init);
 function init() {
   // TODO
   var a = document.getElementById('horn-select');
-  var b = document.getElementById('image');
-  var audio = document.getElementById('hid');
+  var b = document.querySelector('img');
+  var audio = document.querySelector('.hidden');
   var button = document.querySelector('button');
   a.addEventListener('change', function() {
     if(this.value == 'air-horn') {
@@ -23,7 +23,8 @@ function init() {
     }
   });
   var volume = document.getElementById('volume');
-  var volumeImg = document.getElementById('audio');
+  var divpart = document.getElementById('volume-controls');
+  var volumeImg = divpart.querySelector('img');
   volume.addEventListener('input', function() {
     var v = volume.value;
     audio.volume = v/100;
